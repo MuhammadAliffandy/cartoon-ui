@@ -29,7 +29,9 @@ const carouselConfig = {
           <!--  -->
           <Carousel v-bind="carouselConfig" class="w-full">
             <Slide v-for="slide in 3" :key="slide">
-              <h1 class="text-[50px] text-white font-bold leading-none">2023 Best of the Best</h1>
+              <h1 class="text-[60px] font-anton text-white font-bold leading-none">
+                2023 Best of the Best
+              </h1>
             </Slide>
             <template #addons>
               <Pagination />

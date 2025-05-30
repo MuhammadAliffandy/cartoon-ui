@@ -21,7 +21,7 @@ const dataIcon = [
       class="flex w-full border-[4px] border-[#F14A3A] rounded-xl justify-between pr-[20px]"
     >
       <AppContainer class="w-[40%] rounded-l-xl bg-white flex items-center justify-center">
-        <p class="text-[#FF5943] font-bold text-[44px]">LOGO</p>
+        <p class="text-[#FF5943] font-bold text-[44px] font-anton">LOGO</p>
       </AppContainer>
       <AppContainer class="flex items-center gap-[50px] text-white p-[30px] text-[24px]">
         <p class="uppercase text-white text-[18px] font-bold">works</p>

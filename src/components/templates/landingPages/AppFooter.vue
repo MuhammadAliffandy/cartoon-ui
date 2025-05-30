@@ -46,7 +46,7 @@ onMounted(() => {
         class="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center py-[20px] gap-[80px] w-full h-full sm:h-full md:h-full lg:h-[60%] xl:h-[60%] justify-between"
         data-aos="zoom-in"
       >
-        <h1 class="text-white text-[40px]">LOGO</h1>
+        <h1 class="text-white text-[40px] font-anton">LOGO</h1>
         <AppContainer
           class="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center gap-[40px]"
         >
@@ -67,7 +67,7 @@ onMounted(() => {
         class="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center bg-[#F14A3A] gap-[100px] p-[50px] border-[12px] border-[#FF5943] w-full h-full rounded-xl"
       >
         <h1
-          class="text-[60px] leading-none w-full sm:w-full md:w-full lg:w-[50%] xl:w-[50%] font-bold text-white min-w-fit"
+          class="text-[70px] font-anton leading-none w-full sm:w-full md:w-full lg:w-[50%] xl:w-[50%] font-bold text-white min-w-fit"
         >
           You can find<br />me here:
         </h1>

@@ -64,7 +64,9 @@ const carouselConfig = {
         class="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-col w-[20%] gap-[40px] p-[40px] items-start justify-center"
       >
         <p class="text-yellow-400 text-[16px]">No 1/3</p>
-        <h1 class="text-[50px] leading-none text-white font-bold">Personal<br />Awards</h1>
+        <h1 class="text-[60px] font-anton leading-none text-white font-bold">
+          Personal<br />Awards
+        </h1>
         <AppContainer class="flex items-center justify-center gap-[10px]">
           <Icon
             @click="prev"

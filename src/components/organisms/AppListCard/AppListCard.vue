@@ -51,7 +51,7 @@ const handleMouseLeave = () => {
         :icon="props.icon"
         :class="` ${hovered ? 'text-[#FF5943]' : 'text-yellow-400'}   text-[64px]`"
       />
-      <p class="text-[38px] font-bold">{{ props.title }}</p>
+      <p class="text-[45px] font-anton font-bold">{{ props.title }}</p>
     </AppContainer>
     <!--  -->
     <AppContainer class="flex items-center gap-[10px] w-[15%]">

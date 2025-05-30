@@ -11,7 +11,7 @@ import AppPickBox from '@/components/organisms/AppPickBox/AppPickBox.vue'
     <h1
       data-aos="fade-up"
       data-aos-delay="100"
-      class="text-[40px] text-center text-white font-bold"
+      class="font-anton text-[60px] text-center text-white font-bold"
     >
       Conferences & Events
     </h1>
