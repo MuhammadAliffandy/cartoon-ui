@@ -1,14 +1,42 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import AppContainer from '@/components/atoms/AppContainer/AppContainer.vue'
 import AppButton from '@/components/atoms/AppButton/AppButton.vue'
 import { Icon } from '@iconify/vue'
 import AppImage from '@/components/atoms/AppImage/AppImage.vue'
+
 const props = defineProps({
   class: {
     type: String,
     default: '',
   },
 })
+
+// Data untuk animasi typing
+const fullText = 'COFFEE\nSHOP'
+const displayedText = ref('')
+const typingSpeed = 100 // Kecepatan mengetik (ms)
+const loopDelay = 1000 // Jeda sebelum mengulang animasi (ms)
+
+onMounted(() => {
+  startTyping()
+})
+
+function startTyping() {
+  let index = 0
+  const interval = setInterval(() => {
+    if (index < fullText.length) {
+      displayedText.value += fullText[index]
+      index++
+    } else {
+      clearInterval(interval)
+      setTimeout(() => {
+        displayedText.value = ''
+        startTyping()
+      }, loopDelay)
+    }
+  }, typingSpeed)
+}
 </script>
 
 <template>
@@ -26,9 +54,9 @@ const props = defineProps({
       >
         <h3 class="uppercase text-yellow-400 text-[12px] tracking-[10px] font-bold">illustrator</h3>
         <h1
-          class="text-white leading-[150px] font-anton text-center sm:text-center md:text-center lg:text-right xl:text-right font-bold text-[100px] sm:text-[100px] md:text-[100px] lg:text-[160px] xl:text-[160px] uppercase"
+          class="text-white h-[300px] leading-[150px] font-anton text-center sm:text-center md:text-center lg:text-right xl:text-right font-bold text-[100px] sm:text-[100px] md:text-[100px] lg:text-[160px] xl:text-[160px] uppercase"
         >
-          COFFE<br />SHOP
+          {{ displayedText }}
         </h1>
         <!--  -->
         <AppContainer
