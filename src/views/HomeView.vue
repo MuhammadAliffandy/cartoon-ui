@@ -10,7 +10,7 @@ import AppNavbar from '@/components/templates/landingPages/AppNavbar.vue'
 
 <template>
   <main
-    class="w-full h-full flex flex-col gap-[400px] sm:gap-[400px] md:gap-[400px] lg:gap-0 xl:gap-0 bg-[#FF5943] xl:overflow-x-hidden"
+    class="overflow-x-hidden w-full h-full flex flex-col gap-[400px] sm:gap-[400px] md:gap-[400px] lg:gap-0 xl:gap-0 bg-[#FF5943] xl:overflow-x-hidden"
   >
     <AppNavbar />
 
